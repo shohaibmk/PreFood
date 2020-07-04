@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:id="@+id/layout_login"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/login_color_mix"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/icn" />
+
+    <TextView
+        android:id="@+id/textView2"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="PRE FOOD ORDERING APP"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/login_page_edittext_back"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/login_id"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/login_page_edittext_back"
+            android:hint="UNIQUE ID"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_page_edittext_back"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/login_password"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/login_page_edittext_back"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TableRow android:gravity="center">
+
+            <Button
+                android:id="@+id/btnsignin"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/sign_in_back"
+                android:text="Sign in"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnsignup"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dont_have_acc"
+                android:text="Sign up"
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
